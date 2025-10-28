@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- // navbar -->
+    <nav class="main-nav navbar bg-light navbar-expand-sm p-1 fixed-top" data-bs-theme="light" id="navbar">
+            <div class="container">                
+                <a  href="#" class="logo fs-3 navbar-brand">
+                    Fresh<span style="color: #2ecc71;">Link</span>.
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"                
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto" >
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>  
+
+    <!-- // header section -->
+        <section class="hero d-flex align-items-center">
+            <div class="container">
+                <h1 class="fw-bolder ">Your <span style="color: #2ecc71;">Fresh</span> Pick,<br>Your Fit Vibe</h1>
+                <p class="fw-light">Jus buah segar alami untuk energi dan kesehatanmu.</p>
+                <a href="#menu" class="button-hero btn btn-success btn-lg mt-3">Check it Now!</a>
+            </div>
+        </section>
+
+    <!-- // about section -->
+     <section id="about" >
+        <div class="container">
+            <div class="row align-items-center">
+            
+                <!-- Kolom Gambar -->
+                <div class="col-md-6 d-flex     justify-content-center mb-4 mb-md-0">
+                    
+                    <img src="img/buahan.jpg" class="img-fluid rounded shadow" alt="About Juice" style="max-height: 350px;">
+                </div>
+
+                <!-- Kolom Teks -->
+                <div class="col-md-6">    
+                    <h2 class="fw-bold mb-3 text-align: justify;">About Us</h2>                
+                    <p class="fs-5 text-muted" style="text-align: justify;">
+                    Kami menghadirkan jus buah segar alami untuk mendukung gaya hidup sehat dan aktif.
+                    Diproses dari buah pilihan tanpa pengawet, penuh vitamin, dan cocok untuk menemani setiap langkah Anda.
+                    </p>
+                    <a href="#menu" class="btn btn-success mt-3">Explore Menu</a>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="menu">
+        <div class="container" style="margin: auto;">
+            <div class=" text-center mb-5">
+            <h2 class=" fw-bold text-light fs-1">Menu Jus Segar</h2>
+            <h6 class=" mt-3 text-light fs-3">Pilih jus favoritmu untuk menemani harimu yang sehat</h6>
+
+            <div class="row g-4 justify-content-center" style="margin-top: 5px;">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/buahNaga.png" class="card-img-top" alt="Jus Buah Naga">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Jus Buah Naga</h5>
+                    <p class="card-text">Penuh Antioksidan untuk Kulit Sehat dan Segar.</p>
+                    <div class="input-group mb-3 w-75 mx-auto">
+                        <span class="input-group-text">Jumlah</span>
+                        <input type="number" class="form-control jumlah" min="0" value="0" data-juice="Jus Buah Naga">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/mangga.jpg" class="card-img-top" alt="Jus Mangga">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Jus Mangga</h5>
+                    <p class="card-text">Segar manis alami, cocok untuk pelepas dahaga.</p>
+                    <div class="input-group mb-3 w-75 mx-auto">
+                        <span class="input-group-text">Jumlah</span>
+                        <input type="number" class="form-control jumlah" min="0" value="0" data-juice="Jus Mangga">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol pesan semua -->
+            <button class="btn btn-lg mt-4 w-75 bg-white"  id="orderAllBtn">Order</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5 mt-5">
+        <div class="container">
+            <div class="row g-5">
+            
+            <!-- Lokasi -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Lokasi Kami</h2>
+                <p class="mb-4">
+                </p>
+                <!-- Embed Google Maps -->
+                <div class="ratio ratio-16x9">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.088489364969!2d117.5708983746216!3d3.3283133966464957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32147567f0808283%3A0x96229a7e2023b49!2sJl.%20Aki%20Balak%2C%20Karang%20Anyar%20Pantai%2C%20Kec.%20Tarakan%20Bar.%2C%20Kota%20Tarakan%2C%20Kalimantan%20Utara!5e0!3m2!1sid!2sid!4v1759375416469!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Hubungi Kami</h2>
+                <form onsubmit="sendToWhatsApp(event)">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Masukkan username">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">No HP</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor HP">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Kirim</button>
+                </form>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+
+    <footer class="footer text-white py-4 mt-5" style="background-color: #2ecc71;">
+        <div class="container text-center">
+            <!-- Logo brand -->
+            <h4 class="fw-bold mb-3">FreshLink</h4>
+
+            <!-- Sosial media -->
+            <div class="mb-3">
+            <a href="https://instagram.com/yourbrand" target="_blank" class="text-white mx-2">
+                <i data-feather="instagram"></i>
+            </a>
+            <a href="https://wa.me/628123456789" target="_blank" class="text-white mx-2">
+                <i data-feather="message-circle"></i>
+            </a>
+            </div>
+
+            <!-- Credit -->
+            <p class="mb-0">
+            &copy; 2025 <strong>FreshLink</strong>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+
+            if (username === "" || email === "" || phone === "") {
+                alert("Harap isi semua field sebelum mengirim!");
+                return; // hentikan proses
+            }
+
+            let message = `Halo, saya mau daftar:\n\nUsername: ${username}\nEmail: ${email}\nNo HP: ${phone}`;
+            let waURL = "https://wa.me/6281329232898?text=" + encodeURIComponent(message);
+
+            window.open(waURL, "_blank");
+        }
+        
+        document.getElementById("orderAllBtn").addEventListener("click", function() {
+            const inputs = document.querySelectorAll(".jumlah");
+            let pesan = "Halo, saya mau pesan:\n";
+            let adaPesanan = false;
+
+            inputs.forEach(input => {
+            const jumlah = parseInt(input.value);
+            const namaJus = input.getAttribute("data-juice");
+
+            if (jumlah > 0) {
+                pesan += `- ${namaJus} (${jumlah} cup)\n`;
+                adaPesanan = true;
+            }
+            });
+
+            if (!adaPesanan) {
+            alert("Silakan masukkan jumlah pesanan terlebih dahulu!");
+            return;
+            }
+
+            const waURL = "https://wa.me/6281329232898?text=" + encodeURIComponent(pesan);
+            window.open(waURL, "_blank");
+        });
+
+        
+    </script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+
+</body>
+</html>
